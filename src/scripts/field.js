@@ -20,3 +20,5 @@ field.push(createBellPepper)
 field.push(createBellPepper)
 
 console.log(field)
+
+console.log(usePlants)
