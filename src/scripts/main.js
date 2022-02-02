@@ -10,7 +10,7 @@ import { plantSeeds } from "./tractor.js"
 
 const yearlyplan = createPlan()
 
-console.log(yearlyplan)
+// console.log(yearlyplan)
 
 
 import { createAsparagus } from "./seeds/asparagus.js"
@@ -37,9 +37,13 @@ import { createWheat } from "./seeds/wheat.js"
 const wheatSeed = createWheat()
 // console.log(wheatSeed)
 
-addPlant(wheatSeed)
-addPlant(sunflowerSeed)
+const plan = [
+    ["Potato", "Soybean", "Soybean", "Corn"],
+    ["Wheat", "Corn", "Wheat", "Asparagus"],
+    ["Asparagus", "Wheat", "Soybean", "Corn"],
+    ["Asparagus", "Soybean", "Potato", "Wheat"]
+]
 
-console.log((usePlant))
+plantSeeds(plan)
 
-console.log(yearlyplan)
+console.log(usePlant())
