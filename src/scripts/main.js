@@ -1,6 +1,8 @@
 console.log("Welcome to the main module")
 
 import { createPlan } from "./plan.js"
+import { addPlant } from "./field.js"
+import { usePlant } from "./field.js"
 
 
 
@@ -33,3 +35,8 @@ console.log(sunflowerSeed)
 import { createWheat } from "./seeds/wheat.js"
 const wheatSeed = createWheat()
 console.log(wheatSeed)
+
+addPlant(wheatSeed)
+addPlant(sunflowerSeed)
+
+console.log((usePlant))
