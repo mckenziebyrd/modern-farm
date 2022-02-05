@@ -7,11 +7,9 @@ import { plantSeeds } from "./tractor.js"
 import { harvestPlants } from "./harvester.js"
 
 
-
-
 const yearlyplan = createPlan()
 
-// console.log(yearlyplan)
+console.log(yearlyplan)
 
 
 import { createAsparagus } from "./seeds/asparagus.js"
@@ -38,16 +36,19 @@ import { createWheat } from "./seeds/wheat.js"
 const wheatSeed = createWheat()
 // console.log(wheatSeed)
 
-const plan = [
-    ["Potato", "Soybean", "Soybean", "Corn"],
-    ["Wheat", "Corn", "Wheat", "Asparagus"],
-    ["Asparagus", "Wheat", "Soybean", "Corn"],
-    ["Asparagus", "Soybean", "Potato", "Wheat"]
-]
+// const plan = [
+//     ["Potato", "Soybean", "Soybean", "Corn"],
+//     ["Wheat", "Corn", "Wheat", "Asparagus"],
+//     ["Asparagus", "Wheat", "Soybean", "Corn"],
+//     ["Asparagus", "Soybean", "Potato", "Wheat"]
+// ]
 
-const currentField = plantSeeds(plan)
+plantSeeds(yearlyplan)
 
-console.log(usePlant())
+const currentField = usePlant()
 
-// harvestPlants(currentField);
-// console.log((harvestPlants))
+
+console.log(currentField);
+
+const harvest = harvestPlants(currentField);
+console.log(harvest);
