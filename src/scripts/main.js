@@ -4,6 +4,7 @@ import { createPlan } from "./plan.js"
 import { addPlant } from "./field.js"
 import { usePlant } from "./field.js"
 import { plantSeeds } from "./tractor.js"
+import { harvestPlants } from "./harvester.js"
 
 
 
@@ -44,6 +45,9 @@ const plan = [
     ["Asparagus", "Soybean", "Potato", "Wheat"]
 ]
 
-plantSeeds(plan)
+const currentField = plantSeeds(plan)
 
 console.log(usePlant())
+
+// harvestPlants(currentField);
+// console.log((harvestPlants))
