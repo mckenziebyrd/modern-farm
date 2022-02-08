@@ -5,7 +5,7 @@ import { addPlant } from "./field.js"
 import { usePlant } from "./field.js"
 import { plantSeeds } from "./tractor.js"
 import { harvestPlants } from "./harvester.js"
-
+import { catalog } from "./catalog.js"
 
 const yearlyplan = createPlan()
 
@@ -52,3 +52,7 @@ console.log(currentField);
 
 const harvest = harvestPlants(currentField);
 console.log(harvest);
+
+const list = catalog(harvest.harvest)
+console.log(list)
+document.getElementById("container").innerHTML = list

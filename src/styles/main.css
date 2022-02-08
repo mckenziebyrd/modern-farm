@@ -34,3 +34,28 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+
+} 
+
+section {
+    margin: 20px;
+}
+
+/* .plantSeeds {
+    flex-basis: 10%;
+    padding: 3rem
+} */
+
+
+
+
+.module {
+    display: flex;
+    flex-wrap: wrap;
+
+}
